@@ -930,3 +930,100 @@ h3 {
 .sr-only{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
 @media (max-width:980px){.brand-logo-link{max-width:min(360px,68vw)}.header-logo{max-height:54px}}
 @media (max-width:640px){.nav-wrap{min-height:72px}.primary-nav{top:72px}.brand-logo-link{max-width:calc(100vw - 95px)}.header-logo{max-height:48px}.footer-logo{width:min(100%,300px)}}
+
+
+/* Same-page Netlify form confirmation */
+#appointment-form-shell {
+  min-width: 0;
+}
+
+.booking-form[hidden],
+.thank-you-panel[hidden] {
+  display: none !important;
+}
+
+#appointment-submit:disabled {
+  opacity: 0.7;
+  cursor: wait;
+  transform: none;
+}
+
+.form-error {
+  color: #8b1e1e !important;
+}
+
+.thank-you-panel {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.thank-you-panel h2 {
+  margin-bottom: 14px;
+}
+
+.thank-you-panel > p {
+  color: #53606a;
+  max-width: 650px;
+}
+
+.thank-you-icon {
+  width: 58px;
+  height: 58px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 22px;
+  border-radius: 50%;
+  background: var(--navy);
+  color: var(--white);
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.thank-you-alert {
+  width: 100%;
+  margin: 20px 0;
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  border-left: 4px solid var(--navy);
+  border-radius: 8px;
+  background: var(--silver-light);
+  color: var(--charcoal);
+}
+
+.thank-you-alert strong {
+  color: var(--navy);
+}
+
+.thank-you-alert span {
+  font-size: 0.9rem;
+}
+
+.thank-you-contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  align-items: center;
+  margin-top: 4px;
+}
+
+.thank-you-contact span {
+  width: 100%;
+  color: var(--steel);
+  font-size: 0.84rem;
+  font-weight: 600;
+}
+
+.thank-you-contact a {
+  color: var(--navy);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.thank-you-contact a:hover {
+  text-decoration: underline;
+}

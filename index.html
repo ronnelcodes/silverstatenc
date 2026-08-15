@@ -363,7 +363,8 @@
           </div>
         </div>
 
-        <form id="appointment-form" class="booking-form" name="appointment-request" method="POST" action="/success.html" data-netlify="true" data-netlify-honeypot="bot-field">
+        <div id="appointment-form-shell">
+        <form id="appointment-form" class="booking-form" name="appointment-request" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
           <input type="hidden" name="form-name" value="appointment-request">
           <p class="hp-field" aria-hidden="true"><label>Do not fill this out: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
           <div class="form-row">
@@ -434,9 +435,27 @@
             <span>I understand this is an appointment request and not a confirmed booking.</span>
           </label>
 
-          <button type="submit" class="btn">Submit Appointment Request</button>
+          <button type="submit" class="btn" id="appointment-submit">Submit Appointment Request</button>
           <p id="form-message" class="form-message" role="status" aria-live="polite"></p>
         </form>
+
+        <div id="appointment-thank-you" class="booking-form thank-you-panel" hidden tabindex="-1" aria-live="polite">
+          <div class="thank-you-icon" aria-hidden="true">✓</div>
+          <div class="eyebrow">Request Received</div>
+          <h2>Thank you!</h2>
+          <p>Your appointment request has been received by Silver State Notary Co.</p>
+          <p>We will review your requested date, time, location, and service details and contact you to confirm availability and applicable fees.</p>
+          <div class="thank-you-alert">
+            <strong>Your appointment is not confirmed yet.</strong>
+            <span>Please wait for confirmation from Silver State Notary Co. before considering the appointment scheduled.</span>
+          </div>
+          <div class="thank-you-contact">
+            <span>Need to reach us directly?</span>
+            <a href="tel:+17023891063">702-389-1063</a>
+            <a href="mailto:info@silverstatenc.com">info@silverstatenc.com</a>
+          </div>
+        </div>
+      </div>
       </div>
     </section>
   </main>
