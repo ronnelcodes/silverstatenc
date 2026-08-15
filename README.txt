@@ -18,3 +18,8 @@ BRAND ASSETS INTEGRATED
 - Approved horizontal logo added to header and footer
 - Approved circular favicon added for browser and Apple touch icon
 - Original PNG artwork copied without redrawing or changing the logo
+
+ROUTING FIX
+- Appointment form now redirects to /success/
+- Confirmation page now lives at success/index.html for Netlify directory routing.
+- The old root success.html file was removed.
